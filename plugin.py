@@ -35,7 +35,7 @@ blueprint = Blueprint(package_name, package_name, url_prefix='/%s' %  package_na
 menu = {
     'main' : [package_name, 'Tvheadend'],
     'sub' : [
-        ['setting', '설정'], ['list', 'Player'], ['log', '로그']
+        ['setting', u'설정'], ['list', u'Player'], ['log', u'로그']
     ],
     'category' : 'tv'
 }
@@ -45,7 +45,7 @@ plugin_info = {
     'name' : 'tvheadend',
     'category_name' : 'tv',
     'developer' : 'soju6jan',
-    'description' : 'TVHeadend 연결 플러그인',
+    'description' : u'TVHeadend 연결 플러그인',
     'home' : 'https://github.com/soju6jan/tvheadend',
     'more' : '',
 }

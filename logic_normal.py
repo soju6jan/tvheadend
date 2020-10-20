@@ -8,7 +8,6 @@ import time
 from datetime import datetime, timedelta
 import logging
 import urllib
-import urllib2
 import re
 import time
 from operator import itemgetter
