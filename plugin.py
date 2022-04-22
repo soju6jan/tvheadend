@@ -77,7 +77,7 @@ def first_menu(sub):
             from system.model import ModelSetting as SystemModelSetting
             arg = ModelSetting.to_dict()
             arg['ddns'] = SystemModelSetting.get('ddns')
-            arg['url_epg'] = '%s/epg/api/%s' % (arg['ddns'], package_name)
+            arg['url_epg'] = '%s/epg2/api/user/%s' % (arg['ddns'], package_name)
             arg['url_m3u'] = '%s/%s/api/m3u?profile=pass' % (arg['ddns'], package_name)
             apikey = SystemModelSetting.get('auth_apikey')
             if SystemModelSetting.get_bool('auth_use_apikey'):
